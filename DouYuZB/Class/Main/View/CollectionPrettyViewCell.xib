@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionPrettyViewCell" customModule="DouYuZB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="174" height="229"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="174" height="229"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aes-d6-tDX">
+                        <rect key="frame" x="0.0" y="205" width="72" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="sMt-uf-LE1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="anchor_city" image="ico_location">
+                            <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="沈正方" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBy-yT-Web">
+                        <rect key="frame" x="0.0" y="184" width="40" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="9Te-6T-7cf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_cell_default_phone" translatesAutoresizingMaskIntoConstraints="NO" id="sor-PP-H6O">
+                        <rect key="frame" x="0.0" y="0.0" width="174" height="179"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13在线" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zqt-LR-MMK">
+                        <rect key="frame" x="116" y="8" width="50" height="21"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="KYH-8H-DlQ"/>
+                            <constraint firstAttribute="height" constant="21" id="d24-h3-wzT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Aes-d6-tDX" firstAttribute="top" secondItem="FBy-yT-Web" secondAttribute="bottom" constant="5" id="9u0-Or-H9B"/>
+                <constraint firstAttribute="trailing" secondItem="sor-PP-H6O" secondAttribute="trailing" id="N98-MV-69k"/>
+                <constraint firstItem="FBy-yT-Web" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Rd5-oA-VMI"/>
+                <constraint firstItem="sor-PP-H6O" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="SOs-UB-Sbs"/>
+                <constraint firstAttribute="bottom" secondItem="Aes-d6-tDX" secondAttribute="bottom" constant="10" id="Vf8-op-gLo"/>
+                <constraint firstItem="Aes-d6-tDX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Xqt-Aw-aPY"/>
+                <constraint firstItem="FBy-yT-Web" firstAttribute="top" secondItem="sor-PP-H6O" secondAttribute="bottom" constant="5" id="cpw-gl-NNv"/>
+                <constraint firstItem="sor-PP-H6O" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dp1-gG-88a"/>
+                <constraint firstAttribute="trailing" secondItem="Zqt-LR-MMK" secondAttribute="trailing" constant="8" id="nt0-c9-Wbc"/>
+                <constraint firstItem="Zqt-LR-MMK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="tQo-cZ-y3l"/>
+            </constraints>
+            <size key="customSize" width="174" height="229"/>
+            <connections>
+                <outlet property="cityButton" destination="Aes-d6-tDX" id="qrv-KA-BWq"/>
+                <outlet property="iconImageView" destination="sor-PP-H6O" id="Yno-B8-nZI"/>
+                <outlet property="nickNameLabel" destination="FBy-yT-Web" id="cP0-dZ-1YK"/>
+                <outlet property="onlineLabel" destination="Zqt-LR-MMK" id="wOa-Nq-THs"/>
+            </connections>
+            <point key="canvasLocation" x="96" y="143.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ico_location" width="12" height="12"/>
+        <image name="live_cell_default_phone" width="103" height="103"/>
+    </resources>
+</document>
